@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atom.SaveOnBlur</title>
+
+	<!-- Optional CSS -->
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+	
+	<!-- jQuery CSS -->
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui-custom.css">
+	
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	
+	
+	<!-- Custom CSS for Atom.SaveOnBlur -->
+	<style>
+		
+		
+		
+		
+	</style>
+
+    
+    <!-- For Example Page -->
+	<link rel="stylesheet" href="prism.css" >    
+   	<script src="prism.js"></script>
+    
+  </head>
+  <body>
+  	
+  	<div class="container">
+  		
+		<h1>Atom.SaveOn.Blur</h1>
+
+		<p>This is a script that will allow you to easily turn a basic form field (input, textarea) into an field that will save once the user has clicked away from the field.</p>
+		
+		<div class="row">
+			
+			<div class="col-sm-6">
+				
+				<h3>This script uses:</h3>
+				
+				<blockquote>
+					<ul>
+						<li>HTML5</li>
+						<li>CSS</li>
+						<li>Javascript/jQuery</li>
+						<li>PHP</li>
+						<li>MySQL</li>
+						<li>AJAX</li>
+					</ul>
+				</blockquote>				
+				
+			</div><!-- END col -->
+			
+			<div class="col-sm-6">
+
+				<h3>With Optional:</h3>
+				
+				<blockquote>
+					<ul>
+						<li>Twitter Bootstrap 3</li>
+						<li>Font Awesome 4</li>
+					</ul>
+				</blockquote>				
+				
+			</div><!-- END col -->			
+			
+		</div><!-- END row -->
+		
+		<div class="row">
+			
+			<div class="col-sm-12">
+				
+				<h2>Examples:</h2>
+				
+			</div><!-- END col -->
+
+		</div><!-- END row -->
+		
+		<div class="row">
+			
+			<div class="col-sm-12">
+				<h3>Simple usage:</h3>
+
+<pre>
+	<code class="language-php">
+&lt;input data-id=&quot;id&quot; data-label=&quot;Name of the field&quot; data-db=&quot;table-field&quot; value=&quot;value&quot; &gt;
+	</code>
+</pre>				
+
+				<h3>Breakdown:</h3>
+				
+			</div><!-- END col -->
+			
+		</div><!-- END row -->
+		
+		<div class="row">
+			
+			<div class="col-sm-6">
+				
+				<h4>data-id:</h4>
+				<p>This attribute is used to store the id, primary key, or whatever you may be using to identify which record to run the UPDATE query on (or to save).</p>
+			</div><!-- END col -->
+			
+			<div class="col-sm-6">
+				
+<pre>
+	<code class="language-php">
+data-id=&quot;id&quot;
+	</code>
+</pre>				
+				
+			</div><!-- END col -->			
+
+		</div><!-- END row -->
+		
+		<div class="row">
+			
+			<div class="col-sm-6">
+				
+				<h4>data-label:</h4>
+				<p>This attribute is used to give a label to what you are saving. This is primarily used for notification purposes.  The notification is good to assure the user that their data was in fact saved successfully.</p>
+			</div><!-- END col -->
+			
+			<div class="col-sm-6">
+				
+<pre>
+	<code class="language-php">
+data-label=&quot;Name of the field&quot; 
+	</code>
+</pre>				
+				
+			</div><!-- END col -->			
+
+		</div><!-- END row -->
+		
+		<div class="row">
+			
+			<div class="col-sm-6">
+				
+				<h4>data-db:</h4>
+				<p>This attribute is used to tell the query what table and field/colum you are going to run the UPDATE query on.</p>
+			</div><!-- END col -->
+			
+			<div class="col-sm-6">
+				
+<pre>
+	<code class="language-php">
+data-db=&quot;table-field&quot;
+	</code>
+</pre>				
+				
+			</div><!-- END col -->			
+
+		</div><!-- END row -->	
+		
+		<div class="row">
+			
+			<div class="col-sm-6">
+				
+				<h4>value:</h4>
+				<p>This attribute is used to tell the query what new value of the field/colum will be.</p>
+			</div><!-- END col -->
+			
+			<div class="col-sm-6">
+				
+<pre>
+	<code class="language-php">
+value=&quot;value&quot;
+	</code>
+</pre>				
+				
+			</div><!-- END col -->			
+
+		</div><!-- END row -->											
+		
+  	</div><!-- END container -->
+  	
+	<!-- jQuery -->
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	
+	<script>
+		
+		$(document).ready(function() {
+			
+			// Code here....
+			
+			
+		});
+		
+	</script>
+  </body>
+</html>
