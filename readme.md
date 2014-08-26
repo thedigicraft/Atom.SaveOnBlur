@@ -32,7 +32,7 @@
 <p>We take advantage of the new data- attributes in HTML5.  We use them to pass the data that we need in order to quickly run UPDATE queries via AJAX.</p>
 
 ```html
-<input data-id="id" data-label="Name of the field" data-db="table-field" class="form-control" placeholder="Simple Text Field">
+<input data-id="id" data-label="Name of the field" data-db="table-field">
 ```
 
 <h3>Breakdown:</h3>
