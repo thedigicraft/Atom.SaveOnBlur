@@ -32,10 +32,16 @@
 <p>We take advantage of the new data- attributes in HTML5.  We use them to pass the data that we need in order to quickly run UPDATE queries via AJAX.</p>
 
 ```html
-<input data-id="id" data-label="Name of the field" data-db="table-field">
+<input class="blur-save" data-id="id" data-label="Name of the field" data-db="table-field">
 ```
 
 <h3>Breakdown:</h3>
+
+<h4>blur-save:</h4> 
+```html
+class="blur-save"
+```
+<p>This class name is what tells jQuery that this feild should save on blur/tab. This also holds the options CSS rules associated with the class.</p>
 
 <h4>data-id:</h4> 
 ```html
