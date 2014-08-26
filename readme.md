@@ -37,14 +37,22 @@
 
 <h3>Breakdown:</h3>
 
-<h4>data-id: ``` data-id="id" ```</h4>
+<h4>data-id:</h4> 
+```html
+data-id="id"
+```
 <p>This attribute is used to store the id, primary key, or whatever you may be using to identify which record to run the UPDATE query on (or to save).</p>
 
 
-<h4>data-label: ``` data-label="Name of the field" ```</h4>
+<h4>data-label: </h4>
+```html
+data-label="Name of the field"
+```
 <p>This attribute is used to give a label to what you are saving. This is primarily used for notification purposes.  The notification is good to assure the user that their data was in fact saved successfully.</p>
 
-<h4>data-db: ``` data-db="table-field" ```</h4>
-
-
+<h4>data-db:</h4>
+```html
+data-db="table-field" 
+```
+<p>This attribute is used to tell the query what table and field/colum you are going to run the UPDATE query on.</p>
 <p>More soon....</p>
