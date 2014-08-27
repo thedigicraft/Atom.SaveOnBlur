@@ -12,6 +12,9 @@
 <!-- FontAwesome -->
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 
+<!-- FontAwesome -->
+<link rel="stylesheet" href="css/jquery.atom.SaveOnBlur.css">
+
 
 <!-- Custom CSS for Atom.SaveOnBlur -->
 <style>

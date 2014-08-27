@@ -1,3 +1,4 @@
+<?php include('config/connection.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,66 +26,39 @@
 			
 			<div class="col-sm-6">
 				
-				<h3>This script uses:</h3>
+				<?php
 				
-				<blockquote>
-					<ul>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>Javascript/jQuery</li>
-						<li>PHP</li>
-						<li>MySQL</li>
-						<li>AJAX</li>
-					</ul>
-				</blockquote>				
+					$query = "SELECT * FROM users ORDER BY last ASC";
+					$result = mysqli_query($dbc, $query);
+					
+					while($data = mysqli_fetch_assoc($result)) { ?>
+				
+						<div class="row">
+							<div class="col-sm-12">
+								<label>First Name:</label>
+								<input type="text" class="blur-save form-control" data-id="<?php echo $data['id'];?>" data-label="Name of the Field" data-db="users-first" value="<?php echo $data['first'];?>">
+							</div>
+							<div class="col-sm-12">
+								<label>Last Name:</label>
+								<input type="text" class="blur-save form-control" data-id="3" data-label="Name of the Field" data-db="users-last" value="<?php echo $data['last'];?>">
+							</div>
+							<div class="col-sm-12">
+								<label>Website:</label>
+								<input type="text" class="blur-save form-control" data-id="3" data-label="Name of the Field" data-db="users-website" value="<?php echo $data['website'];?>">
+							</div>										
+						</div>
+			
+				<?php } ?>
 				
 			</div><!-- END col -->
 			
 			<div class="col-sm-6">
 
-				<h3>With Optional:</h3>
-				
-				<blockquote>
-					<ul>
-						<li>Twitter Bootstrap 3</li>
-						<li>Font Awesome 4</li>
-					</ul>
-				</blockquote>				
+			
 				
 			</div><!-- END col -->			
 			
-		</div><!-- END row -->
-		
-		<div class="row">
-			
-			<div class="col-sm-12">
-				
-				<h2>Examples:</h2>
-				
-			</div>
-
-		</div>
-		
-		<div class="row">
-			
-			<div class="col-sm-6">
-				<h3>Simple usage:</h3>
-				<input data-id="<?=$id;?>" data-label="Name of the field" data-db="table-field" class="form-control" placeholder="Simple Text Field">
-				
-			</div>
-			<div class="col-sm-6">
-				<h3>Code:</h3>
-<pre>
-	<code class="language-markup">
-
-<input data-id="<?=$id;?>" data-label="Name of the field" data-db="table-field" class="form-control" placeholder="Simple Text Field">
-		
-	</code>
-</pre>				
-
-				
-			</div>
-		</div>		
+		</div><!-- END row -->	
 
   	</div>
 

@@ -2,14 +2,17 @@
 	
 	// Database Connection:
 	include('../config/connection.php');
-
+	
+	// Turn off those pesky Index notices.
+	error_reporting(E_ALL & ~E_NOTICE); 
+	
 	// Breakup the POST values into easy variables:
-	$id = $_POST['id']; // Unique identifier for the record we wish to UPDATE
-	$value = $_POST['value']; // New Value
-	$action = $_POST['action']; // 
+	$id = $_GET['id']; // Unique identifier for the record we wish to UPDATE
+	$value = $_GET['value']; // New Value
+	$action = $_GET['action']; // 
 	
 	# Break up database info:
-	$db = explode('-', $_GET['field']); // Explode the table and feild name from string.
+	$db = explode('-', $_GET['db']); // Explode the table and feild name from string.
 	$table = $db[0]; // Store the table name.
 	$field = $db[1]; // Store the field name.
 
@@ -30,7 +33,7 @@
 	        # Make the update:
 	        $q = "UPDATE $table SET $field = '$value' WHERE id = $id";
 	        $r = mysqli_query($dbc, $q);
-			
+
 			# If there is a result
 	        if($r){
 	        	
