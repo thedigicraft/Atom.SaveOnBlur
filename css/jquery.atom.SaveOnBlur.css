@@ -26,3 +26,9 @@ input.input-focus, textarea.input-focus  {
   cursor:text;
 
 }
+
+#alert {
+	position:absolute;
+	top:0px;
+	right:0px;
+}

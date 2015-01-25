@@ -17,11 +17,12 @@ $(document).ready(function() {
 	  
 	  	$.get( "ajax/blur-save.php?id="+id+"&value="+value+"&db="+db+"&action=save", function( html ) {
 	    
-		    var status = html;
+		    var status = html; // Save the HTML response (should be a numeric value)
 		
-		    if(status == 1) {         
-		    	 
-				// Notice script goes here...
+		    if(status == 1) { // If the save was a success...        
+		    	
+				$('#alert').html(label + ' has been updated'); // Display success message and label.
+				$('#alert').addClass('alert-success'); // Set the class to Bootstrap success.
 				
 		   	} // END if status
 		   	

@@ -34,17 +34,18 @@
 					while($data = mysqli_fetch_assoc($result)) { ?>
 				
 						<div class="row">
+							<h2><small>User:</small> <?php echo $data['first']; ?></h2>
 							<div class="col-sm-12">
 								<label>First Name:</label>
-								<input type="text" class="blur-save form-control" data-id="<?php echo $data['id'];?>" data-label="Name of the Field" data-db="users-first" value="<?php echo $data['first'];?>">
+								<input type="text" class="blur-save form-control" data-id="<?php echo $data['id'];?>" data-label="First Name" data-db="users-first" value="<?php echo $data['first'];?>">
 							</div>
 							<div class="col-sm-12">
 								<label>Last Name:</label>
-								<input type="text" class="blur-save form-control" data-id="3" data-label="Name of the Field" data-db="users-last" value="<?php echo $data['last'];?>">
+								<input type="text" class="blur-save form-control" data-id="3" data-label="Last Name" data-db="users-last" value="<?php echo $data['last'];?>">
 							</div>
 							<div class="col-sm-12">
 								<label>Website:</label>
-								<input type="text" class="blur-save form-control" data-id="3" data-label="Name of the Field" data-db="users-website" value="<?php echo $data['website'];?>">
+								<input type="text" class="blur-save form-control" data-id="3" data-label="Website URL" data-db="users-website" value="<?php echo $data['website'];?>">
 							</div>										
 						</div>
 			
@@ -61,6 +62,6 @@
 		</div><!-- END row -->	
 
   	</div>
-
+	<div id="alert" class="alert" role="alert"></div>
   </body>
 </html>
